@@ -1,4 +1,4 @@
-# Exercise: Lists as Stacks and Queues Problems for exercise and homework for the Python Advanced Course @SoftUni. Submit your solutions in the SoftUni judge system at https://judge.softuni.org/Contests/1831.
+# Exercise: Lists as Stacks and Queues Problems for exercise and homework for the Python Advanced Course @SoftUni.
 
 ## 1. Reverse Numbers
 
