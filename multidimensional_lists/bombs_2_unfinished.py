@@ -12,6 +12,7 @@ for (r, c) in BOMB_COORDINATES:
             matrix[row][col] -= power
 
 [[alive_cells.append(n) for n in row if n > 0] for row in matrix]
+
 print(f'Alive cells: {len(alive_cells)}')
 print(f'Sum: {sum(alive_cells)}')
 [print(*row) for row in matrix]
