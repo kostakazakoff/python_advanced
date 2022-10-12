@@ -1,4 +1,4 @@
-# Exercise: Functions Advanced Problems for exercise and homework for the Python Advanced Course @SoftUni. Submit your solutions in the SoftUni judge system at https://judge.softuni.org/Contests/1839.
+# Exercise: Functions Advanced Problems for exercise and homework for the Python Advanced Course @SoftUni.
 
 ## 1. Negative vs Positive
 
