@@ -5,3 +5,4 @@ full = all([all([col in 'XO' for col in row]) for row in gamepad])
 [print(*x) for x in gamepad]
 print()
 print(full)
+print()
