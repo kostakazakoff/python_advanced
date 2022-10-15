@@ -8,6 +8,7 @@ You will be given a sequence of 6 seats - every seat is a mix of a number and a 
 * If there is no equality, the two numbers should be returned at the end of their sequences (first becomes last, last becomes first).
 * If you match an already taken seat, you should just remove both numbers from their sequences.
 Each time you take numbers from the sequences and try to match them, you make one rotation. You should keep track of all rotations made.
+
 The program should end under the following circumstances:
 - You have found 3 (three) seat matches 
 - You have made a total of 10 rotations
