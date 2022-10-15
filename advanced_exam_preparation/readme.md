@@ -204,11 +204,13 @@ Note: Submit only the function in the judge system
 - There will be no input, just parameters passed to your function
 ### Output
 - Return a string for each of the 3 types of a meal of the sorted result in the format:
-"{meal_type}:"
-" - {first_product_added}"
-" - {second_product_added}"
- …
-" - {Nth_product_added}"
+
+> "{meal_type}:"
+> " - {first_product_added}"
+> " - {second_product_added}"
+> …
+> " - {Nth_product_added}"
+
 - If there are no products given for a meal, return just its name in the format shown above.
 - If there are NO products in the cart (at all), return the message: "No products in the cart!"
 ### Constrains
