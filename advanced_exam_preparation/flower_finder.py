@@ -2,14 +2,14 @@ from collections import deque
 
 
 def flower_found():
-    for name, value in flowers.items():
-        if vowel in value:
-            value = value.replace(vowel, '')
-            flowers[name] = value
-        if consonant in value:
-            value = value.replace(consonant, '')
-            flowers[name] = value
-        if not value:
+    for name, name_chars in flowers.items():
+        if vowel in name_chars:
+            name_chars = name_chars.replace(vowel, '')
+            flowers[name] = name_chars
+        if consonant in name_chars:
+            name_chars = name_chars.replace(consonant, '')
+            flowers[name] = name_chars
+        if not name_chars:
             return name
 
 
@@ -31,6 +31,5 @@ while True:
         break  
     
 if not found: print("Cannot find any word!")
-
 if vowels: print(f"Vowels left: {' '.join(vowels)}")
 if consonants: print(f"Consonants left: {' '.join(consonants)}")
