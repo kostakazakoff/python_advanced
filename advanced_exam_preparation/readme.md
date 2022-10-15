@@ -84,3 +84,27 @@ On the following lines, until you receive "Stop" you will be receiving commands 
 - You will always receive valid coordinates
 - You will always receive directions in the range of the table
 - You will always receive letters or numbers
+
+## Song Creator
+Create a function called add_songs().
+It receives one or many tuples.
+Each tuple consists of exactly two elements - the song's title in the first position and a list in the second position.
+The list can consist of one, many, or no strings - each representing a line of the lyrics of the song. 
+The function collects the information and concatenates the lyrics for each song (each string on a different line). If you are given the same song more than once, add the additional lyrics (if ones are given) to the lyrics of the song.
+
+In the end, it should return a string for each song with its lyrics in the format:
+"- {song_title}"
+"{first_line_of_lyrics}"
+"{second_line_of_lyrics}"
+…
+"{nth_line_of_lyrics}"
+
+If there are no lyrics given for a song, return just its title in the format shown above.
+For more clarification, see the examples below.
+
+### Input:
+There will be no input, just tuples passed to your function.
+### Output:
+Return the desired result as described above.
+### Constraints:
+You will always have a song's name on the first position of the tuple.
