@@ -41,36 +41,36 @@ Next, you will receive your first position on the table in the format "({row}, {
 
 On the following lines, until you receive "Stop" you will be receiving commands in the format:
 - "Create, {direction}, {value}"
-> The direction could be "up", "down", "left" or "right"
+    - The direction could be "up", "down", "left" or "right"
 
-> If you step in an empty position, create the given value on that position. E.g., if the given value is "A", and the position is empty (".") - change it to "A"
+    - If you step in an empty position, create the given value on that position. E.g., if the given value is "A", and the position is empty (".") - change it to "A"
 
-> If the position is NOT empty, do NOT create a value on that position
+    - If the position is NOT empty, do NOT create a value on that position
 
 - "Update, {direction}, {value}"
-> The direction could be "up", "down", "left" or "right"
+    - The direction could be "up", "down", "left" or "right"
 
-> If you step on a letter or number, update the position with the given value. E.g., if the given value is "h", and the position's value is "12" - change it to "h"
+    - If you step on a letter or number, update the position with the given value. E.g., if the given value is "h", and the position's value is "12" - change it to "h"
 
-> If the position is empty, do NOT update the value on that position
+    - If the position is empty, do NOT update the value on that position
 
 - "Delete, {direction}"
-> The direction could be "up", "down", "left" or "right"
+    - The direction could be "up", "down", "left" or "right"
 
-> If you step on a letter or number, delete it, and empty the position. E.g., if the given position's value is "h" - change it to "."
+    - If you step on a letter or number, delete it, and empty the position. E.g., if the given position's value is "h" - change it to "."
 
-> If the position is already empty, do NOT delete it
+    - If the position is already empty, do NOT delete it
 
 - "Read, {direction}"
-> The direction could be "up", "down", "left" or "right"
+    - The direction could be "up", "down", "left" or "right"
 
-> If you step on a letter or number, print it on the console
+    - If you step on a letter or number, print it on the console
 
-> If the position is empty, do NOT read it
+    - If the position is empty, do NOT read it
 
-> You can make only ONE move at a time in the given direction for each command given.
+    - You can make only ONE move at a time in the given direction for each command given.
 
-> In the end, print the final matrix.
+    - In the end, print the final matrix.
 
 ### Input
 - On the first 6 lines - a matrix with positions separated by a single space
@@ -135,15 +135,15 @@ For more clarification see the examples below.
 ### Output
 - On the first line:
 
-> If you have at least one box filled, print: 
-"Great! You filled {total count} boxes."
-> If you couldn't fill any boxes, print:
-"Sorry! You couldn't fill any boxes!"
+    - If you have at least one box filled, print: 
+    "Great! You filled {total count} boxes."
+    - If you couldn't fill any boxes, print:
+    "Sorry! You couldn't fill any boxes!"
 
 - On the following lines, print the eggs left or pieces of paper left if there are any:
 
-> Eggs left: {left eggs joined by ", "}
-> Pieces of paper left: {left pieces of paper joined by ", "}
+    - Eggs left: {left eggs joined by ", "}
+    - Pieces of paper left: {left pieces of paper joined by ", "}
 
 ### Constraints
 You will always have at least one egg and at least one piece of paper.
