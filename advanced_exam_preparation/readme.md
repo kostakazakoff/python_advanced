@@ -265,6 +265,6 @@ Stop the program if you run out of commands or the rover gets broken.
 - For each deposit found while you go through the commands, print out on the console: "{Water, Metal or Concrete} deposit found at ({row}, {col})"
 - If the rover hits a rock, print the coordinates where it got broken in the format: "Rover got broken at ({row}, {col})"
 - After you go through all the commands or the rover gets broken, print out on the console:
->
-> If the rover has found at least one of each deposit, print on the console: "Area suitable to start the colony."
-> Otherwise, print on the console: "Area not suitable to start the colony."
+
+    - If the rover has found at least one of each deposit, print on the console: "Area suitable to start the colony."
+    - Otherwise, print on the console: "Area not suitable to start the colony."
