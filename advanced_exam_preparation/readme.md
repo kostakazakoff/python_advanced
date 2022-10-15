@@ -234,6 +234,6 @@ Start by taking the last bowl of ramen and the first customer. Try to serve ever
 - On the second line, you will receive integers representing the customers, separated by a single space and a comma ", ".
 ### Output
 - If all customers are served, print: "Great job! You served all the customers."
-Print all of the left ramen bowls (if any) separated by comma and space in the format: "Bowls of ramen left: {bowls of ramen left}"
+- Print all of the left ramen bowls (if any) separated by comma and space in the format: "Bowls of ramen left: {bowls of ramen left}"
 - Otherwise, print: "Out of ramen! You didn't manage to serve all customers."
-Print all customers left separated by comma and space in the format "Customers left: {customers left}"
+- Print all customers left separated by comma and space in the format "Customers left: {customers left}"
