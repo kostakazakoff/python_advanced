@@ -267,5 +267,4 @@ Stop the program if you run out of commands or the rover gets broken.
 - After you go through all the commands or the rover gets broken, print out on the console:
 >
 > If the rover has found at least one of each deposit, print on the console: "Area suitable to start the colony."
-
 > Otherwise, print on the console: "Area not suitable to start the colony."
