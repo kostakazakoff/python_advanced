@@ -221,7 +221,6 @@ Note: Submit only the function in the judge system
 - Each tuple given will always contain the type of meal in the first position and a product in the second.
 - There will be no other meals passed than "Soup", "Pizza", and "Dessert".
 
-
 # Ramen Shop
 You will be given two sequences of integers representing bowls of ramen and customers. Your task is to find out if you can serve all the customers.
 
