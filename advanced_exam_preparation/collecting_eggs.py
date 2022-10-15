@@ -9,6 +9,7 @@ while eggs_que and papers_stack:
     egg = eggs_que.popleft()
 
     if egg <= 0: continue
+    
     elif egg == 13:
         papers_stack[0], papers_stack[-1] = papers_stack[-1], papers_stack[0]
         continue
