@@ -1,4 +1,4 @@
-## Stewards
+# Stewards
 "It's only when you are flying above that you realize how incredible the Earth really is."
 As you know, stewards are needed for every single flight. Today you will be that one steward, and you will be assisting the passengers in finding their seats.
 
@@ -26,7 +26,7 @@ When the program ends, print the following on two different lines:
 - You will never run out of numbers in your sequences before the program ends
 - You will never have more than one match at a time
 
-## CRUD
+# CRUD
 The abbreviation CRUD expands to Create, Read, Update and Delete.
 These are the four fundamental operations in a database.
 
@@ -85,7 +85,7 @@ On the following lines, until you receive "Stop" you will be receiving commands 
 - You will always receive directions in the range of the table
 - You will always receive letters or numbers
 
-## Song Creator
+# Song Creator
 Create a function called add_songs().
 It receives one or many tuples.
 Each tuple consists of exactly two elements - the song's title in the first position and a list in the second position.
@@ -109,7 +109,7 @@ Return the desired result as described above.
 ### Constraints:
 You will always have a song's name on the first position of the tuple.
 
-## Collecting Eggs
+# Collecting Eggs
 Old MacDonald wants to fill some boxes with eggs. But he has a big farm, and he will need some help.
 
 On the first line, you will receive a sequence of numbers, each representing an egg with its size.
