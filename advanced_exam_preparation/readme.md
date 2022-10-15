@@ -1,6 +1,7 @@
 ## Stewards
 "It's only when you are flying above that you realize how incredible the Earth really is."
 As you know, stewards are needed for every single flight. Today you will be that one steward, and you will be assisting the passengers in finding their seats.
+
 You will be given a sequence of 6 seats - every seat is a mix of a number and a letter in the format "{number}{letter}". You will also be given two more sequences of numbers only.
 - First, you have to take the first number of the first sequence and the last number of the second sequence.
 - Next, take the sum of those two numbers and find its ASCII character.
