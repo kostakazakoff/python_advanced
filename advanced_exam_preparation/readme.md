@@ -539,11 +539,12 @@ Aladdin, rich and powerful with the help of the Genie, is now preparing to marry
 First, you will receive a sequence of integers representing the materials for every wedding present. After that, you will be given another sequence of integers – Genie magic level for every aim to make a gift.
 Your task is to mix materials with magic levels so you can make presents, listed in the table below.
 
-| Gift  |  Magic needed |
-| Gemstone  |  100 to 199 |
-| Porcelain Sculpture |  200 to 299 |
-| Gold  |  300 to 399 |
-| Diamond Jewellery |  400 to 499 |
+| ---- | ------------ |
+| Gift | Magic needed |
+| Gemstone | 100 to 199 |
+| Porcelain Sculpture | 200 to 299 |
+| Gold | 300 to 399 |
+| Diamond Jewellery | 400 to 499 |
 
 
 
