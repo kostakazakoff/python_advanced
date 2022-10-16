@@ -1,6 +1,18 @@
 from collections import deque
 
 
+def elf_makes_toy(capacity):
+    global toys_maked, energy, eat_cookie, elf
+    if elf < toy * capacity:
+        elf *= 2
+        elves.append(elf)
+        return False
+    toys_maked = capacity
+    energy = toy * capacity
+    eat_cookie = 1
+    return True
+
+
 elves = deque([int(x) for x in input().split()])
 materials = [int(x) for x in input().split()]
 used_energy = 0
@@ -18,24 +30,12 @@ while materials and elves:
     work_count += 1
 
     if work_count % 3 == 0:
-        if elf < toy * 2:
-            elf *= 2
-            elves.append(elf)
-            continue
-
-        toys_maked = 2
-        energy = toy * 2
-        eat_cookie = 1
-
+        elf_capacity = 2
     else:
-        if elf < toy:
-            elf *= 2
-            elves.append(elf)
-            continue
+        elf_capacity = 1
 
-        toys_maked = 1
-        energy = toy
-        eat_cookie = 1
+    if not elf_makes_toy(elf_capacity):
+            continue
 
     if work_count % 5 == 0:
         if toys_maked:
