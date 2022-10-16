@@ -3,12 +3,15 @@ from collections import deque
 
 def flower_found():
     for name, name_chars in flowers.items():
+
         if vowel in name_chars:
             name_chars = name_chars.replace(vowel, '')
             flowers[name] = name_chars
+
         if consonant in name_chars:
             name_chars = name_chars.replace(consonant, '')
             flowers[name] = name_chars
+            
         if not name_chars:
             return name
 
