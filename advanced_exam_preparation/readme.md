@@ -386,26 +386,26 @@ Note: Submit only the function in the judge system
 - There will be no input. Just parameters passed to your function.
 ### Output
 - Return the result, sorted as described above in the format:
->
-> "{type_one}:
 
-> -{spring_object_of_this_type_one}
+"{type_one}:
 
-> -{spring_object_of_this_type_two}
+-{spring_object_of_this_type_one}
 
-> …
+-{spring_object_of_this_type_two}
 
-> -{spring_object_of_this_type_N}
+…
 
-> {type_two}:
+-{spring_object_of_this_type_N}
 
-> …
+{type_two}:
 
-> {type_N}:
+…
 
-> …
+{type_N}:
 
-> -{last_spring_object_of_typeN}"
+…
+
+-{last_spring_object_of_typeN}"
 
 
 # Christmas Elves
