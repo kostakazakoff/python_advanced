@@ -608,8 +608,11 @@ Depending on how many points you have collected, you win one of the following:
 
 | -------- | ----------------- |
 | Football | 100 to 199 points |
+| -------- | ----------------- |
 | Teddy Bear | 200 to 299 points |
+| -------- | ----------------- |
 | Lego Construction Set | 300 and more points |
+| -------- | ----------------- |
 
 Your job is to keep track of the scored points and to check if you won a prize. 
 For more clarifications, see the examples below.
