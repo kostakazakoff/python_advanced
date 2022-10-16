@@ -15,11 +15,11 @@ def naughty_or_nice_list(*args, **kwargs):
             del santa_source_dict[a[0]]
 
     santa_source_dict_2 = {}
-    for k, values in santa_source_dict.items():
+    for name, values in santa_source_dict.items():
         for n in values:
             if n not in santa_source_dict_2:
                 santa_source_dict_2.update({n: []})
-            santa_source_dict_2[n].append(k)
+            santa_source_dict_2[n].append(name)
 
     for name, v in kwargs.items():
         if name in santa_source_dict_2 and len(santa_source_dict_2[name]) == 1:
