@@ -12,6 +12,8 @@ ROWS, COLS = [int(x) for x in input().split(', ')]
 decorations, gifts, chrstms_cookies = 0, 0, 0
 dec_collected, gifts_collected, cookies_collected = 0, 0, 0
 workshop = []
+merry_christmas = False
+
 for row in range(ROWS):
     line = input().split()
     if 'Y' in line: r, c = row, line.index('Y')
@@ -20,8 +22,8 @@ for row in range(ROWS):
     if 'C' in line: chrstms_cookies += line.count('C')
     workshop.append(line)
 
-command = input()
-while command != 'End':
+command = input().split('-')
+while command[0] != 'End':
     direction, steps = command[0], int(command[1])
 
     for _ in range(steps):
@@ -32,7 +34,15 @@ while command != 'End':
         workshop[r][c] = 'Y'
         if all((decorations == dec_collected, gifts == gifts_collected, chrstms_cookies == cookies_collected)):
             print('Merry Christmas!')
+            merry_christmas = True
             break
-else:
-    print('You've collected:')
+    
+    if merry_christmas: break
 
+    command = input().split('-')
+
+print("You've collected:")
+print(f'- {dec_collected} Christmas decorations')
+print(f'- {gifts_collected} Gifts')
+print(f'- {cookies_collected} Cookies')
+[print(*row) for row in workshop]
