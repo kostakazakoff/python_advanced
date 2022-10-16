@@ -480,10 +480,11 @@ If you've collected all items at any point, end the program and print: "Merry Ch
 "Merry Christmas!"
 - Otherwise, skip the line
 - Next, print the number of collected items in the format:
-    "You've collected:
-    - {number_of_decoration} Christmas decorations
-    - {number_of_gifts} Gifts
-    - {number_of_cookies} Cookies"
+
+>    "You've collected:
+>    - {number_of_decoration} Christmas decorations
+>    - {number_of_gifts} Gifts
+>    - {number_of_cookies} Cookies"
 
 Finally, print the field, as shown in the examples.
 
