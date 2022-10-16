@@ -581,8 +581,11 @@ You have succeeded in crafting the presents when you've crafted either one of th
 - On the next lines, print the gifts alphabetically that the Genie has crafted at least once:
 
 "{present1}: {amount}
+
 {present2}: {amount}
+
 …
+
 {presentN}: {amount}"
 
 ### Constraints
