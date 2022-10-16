@@ -253,7 +253,8 @@ Commands can be: "up", "down", "left", or "right".
 For each command, the rover moves in the given directions with one step, and it can land on one of the given types of deposit or a rock:
 - When it lands on a deposit, you must print the coordinates of that deposit in the format shown below and increase its value by 1.
 - If the rover lands on a rock, it gets broken. Print the coordinates where it got broken in the format shown below, and the program ends.
-- If the rover goes out of the field, it should continue from the opposite side in the same direction. Example: If the rover is at position (3, 0) and it needs to move left (outside the matrix), it should be placed at position (3, 5).
+- If the rover goes out of the field, it should continue from the opposite side in the same direction.
+Example: If the rover is at position (3, 0) and it needs to move left (outside the matrix), it should be placed at position (3, 5).
 
 The rover needs to find at least one of each deposit to consider the area suitable to start our colony. 
 Stop the program if you run out of commands or the rover gets broken.
@@ -372,7 +373,9 @@ Print either one of the following:
 Spring is the season of new beginnings. Fresh buds bloom, animals awaken and the earth seems to come to life again. Farmers and gardeners plant their seeds and temperatures slowly rise.
 Write a function called start_spring which will receive a different number of keyword arguments.
 Each keyword holds a key with a name of the spring object (string), and each value holds its type (string).
+
 For example, dahlia="flower", shrikes="bird", dogwood="tree".
+
 The function should sort the given spring objects in collections by their type:
 - The collections sorted by their number of elements in descending order. If two or more collections have the same number of elements in them, return them in ascending order (alphabetically) by the type's name. 
 - Each collection's elements should be sorted in ascending order (alphabetically) by the object's name.
@@ -383,22 +386,23 @@ Note: Submit only the function in the judge system
 - There will be no input. Just parameters passed to your function.
 ### Output
 - Return the result, sorted as described above in the format:
-"{type_one}:
+>
+> "{type_one}:
 
--{spring_object_of_this_type_one}
+> -{spring_object_of_this_type_one}
 
--{spring_object_of_this_type_two}
+> -{spring_object_of_this_type_two}
 
-…
+> …
 
--{spring_object_of_this_type_N}
+> -{spring_object_of_this_type_N}
 
-{type_two}:
+> {type_two}:
 
-…
+> …
 
-{type_N}:
+> {type_N}:
 
-…
+> …
 
--{last_spring_object_of_typeN}"
+> -{last_spring_object_of_typeN}"
