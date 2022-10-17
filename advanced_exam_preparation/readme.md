@@ -706,8 +706,7 @@ Orders left: {left orders joined by ", "}
 Two players bare-handedly throw small sharp-pointed missiles known as darts at a round target known as a dartboard. Who is going to win this game?
 You will be given a matrix with 7 rows and 7 columns representing the dartboard. For example:
 
-![](c:/Users/K/Desktop/Screenshot%202022-10-17%20125402.jpg)
-
+![Screenshot 2022-10-17 125402](https://user-images.githubusercontent.com/104040753/196150492-d44526f0-a9db-4154-a0b8-f22ec68c930c.png)
 
 Each of the two players starts with a score of 501 and they take turns to throw a dart – one throw for each player. The score for each turn is deducted from the player’s total score. The first player who reduces their score to zero or less wins the game.
 You are going to receive the information for every throw on a separate line. The coordinate information of a hit will be in the format: "({row}, {column})".
