@@ -699,3 +699,39 @@ Orders left: {left orders joined by ", "}
 ### Constraints
 -You will always have at least one order and at least one employee
 -All integers will be in range [-100, 100]
+
+
+# Darts
+
+Two players bare-handedly throw small sharp-pointed missiles known as darts at a round target known as a dartboard. Who is going to win this game?
+You will be given a matrix with 7 rows and 7 columns representing the dartboard. For example:
+
+![](c:/Users/K/Desktop/Screenshot%202022-10-17%20125402.png)
+
+Each of the two players starts with a score of 501 and they take turns to throw a dart – one throw for each player. The score for each turn is deducted from the player’s total score. The first player who reduces their score to zero or less wins the game.
+You are going to receive the information for every throw on a separate line. The coordinate information of a hit will be in the format: "({row}, {column})".
+- If a player hits outside the dartboard, he does not score any points.
+- If a player hits a number, it is deducted from his total.
+- If a player hits a "D" the sum of the 4 corresponding numbers per column and row is doubled and then deducted from his total.
+- If a player hits a "T" the sum of the 4 corresponding numbers per column and row is tripled and then deducted from his total.
+- "B" is the bullseye. If a player hits it, he wins the game, and the program ends.
+
+For example, if Peter hits position with coordinates (2, 1), he wins (23 + 2 + 9 + 18) * 2 = 104 points and they are deducted from his total.
+
+Your job is to find who won the game and with how many turns.
+
+### Input
+- The name of the first player and the name of the second player, separated by ", "
+- 7 lines – the dartboard (separated by single space)
+- On the next lines - the coordinates in the format: "({row}, {column})"
+
+### Output
+- You should print only one line containing the winner and his count of throws: 
+
+"{name} won the game with {count_turns} throws!"
+
+### Constrains
+- There will always be exactly 7 lines
+- There will always be a winner
+- The points will be in range [1, 24]
+- The coordinates will be in range [0, 100]
