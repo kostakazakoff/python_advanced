@@ -10,9 +10,9 @@ while orders and employees:
         orders.popleft()
         continue
     if orders[0] > employees[-1]:
-        made = employees.pop()
-        orders[0] -= made
-        pizzas_made += made
+        pizzas = employees.pop()
+        orders[0] -= pizzas
+        pizzas_made += pizzas
     elif orders[0] <= employees[-1]:
         pizzas_made += orders.popleft()
         employees.pop()
