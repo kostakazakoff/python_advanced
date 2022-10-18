@@ -1,14 +1,15 @@
 def stock_availability(*args):
     in_stock, action, *flavours = args
     flavours = [int(x) if type(x) == int else x for x in flavours]
-    
+
     if action == "delivery":
         [in_stock.append(x) for x in flavours]
 
-    elif action == "sell":
-        if not flavours and in_stock: in_stock.pop(0)
+    elif in_stock:
+        if not flavours: in_stock.pop(0)
         elif type(flavours[0]) == int: in_stock = in_stock[flavours[0]:]
         else: in_stock = [x for x in in_stock if x not in flavours]
+
     return in_stock
 
 
