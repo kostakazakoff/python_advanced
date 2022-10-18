@@ -844,10 +844,15 @@ For more clarifications, see the examples below.
 - If the player loses the game, print: "Game over! You've collected {total_coins} coins."
     - Collected coins have to be rounded down to the next-lowest number.
 - The player's path as cooridnates in lists on separate lines: 
+
     "Your path:
+
     [{row_position1}, {column_position1}]
+
     [{row_position2}, {column_position2}]
+
     …
+
     [{row_positionN}, {column_positionN}]"
 
 ### Constrains
