@@ -2,6 +2,7 @@ from math import floor
 
 
 def step_to(direct: str):
+    if direct not in ('up', 'down', 'left', 'right'): return False
     global field, r, c
     player_path.append([r, c])
     field[r][c] = 0
@@ -10,6 +11,7 @@ def step_to(direct: str):
     if direct == 'left': c -= 1
     if direct == 'right': c += 1
     r, c = r % SIZE, c % SIZE
+    return True
 
 
 SIZE = int(input())
@@ -26,7 +28,7 @@ for row in range(SIZE):
     field.append(line)
 
 while coins < 100:
-    step_to(input())
+    if not step_to(input()): continue
 
     if field[r][c] == 'X':
         coins = floor(coins * 0.5)
