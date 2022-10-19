@@ -16,7 +16,7 @@ def player_moves():
 
 
 player = {'White': [0, 0], 'Black': [0, 0]}
-col_marks = {0: 'a', 1: 'b', 2: 'c', 3: 'd', 4: 'e', 5: 'f', 6: 'g', 7: 'h'}
+column_marks = {0: 'a', 1: 'b', 2: 'c', 3: 'd', 4: 'e', 5: 'f', 6: 'g', 7: 'h'}
 turn = ['White', 'Black']
 chessboard = []
 
@@ -40,12 +40,12 @@ while True:
     end, diag_attack, step = player_moves()
 
     if r == end:
-        print(f"Game over! {color} pawn is promoted to a queen at {col_marks[c]}{8 - r}.")
+        print(f"Game over! {color} pawn is promoted to a queen at {column_marks[c]}{8 - r}.")
         break
 
     for d in diag_attack:
         if 0 <= d[0] < 8 and 0 <= d[1] < 8 and chessboard[d[0]][d[1]] == oponent_color:
-            print(f"Game over! {color} win, capture on {col_marks[d[1]]}{8 - d[0]}.")
+            print(f"Game over! {color} win, capture on {column_marks[d[1]]}{8 - d[0]}.")
             exit()
 
     player[color][0] = step

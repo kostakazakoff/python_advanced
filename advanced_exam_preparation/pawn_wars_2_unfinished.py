@@ -8,7 +8,7 @@ def pawn_capture():
             return True
 
 
-def pawn_at_and():
+def pawn_at_end():
     global r, c, chessboard, pawn
     chessboard[r][c] = '-'
     r += pawn[0]['Move']
@@ -47,7 +47,7 @@ while True:
     if pawn_capture():
         break
 
-    if pawn_at_and():
+    if pawn_at_end():
         break
 
     pawn[0], pawn[1] = pawn[1], pawn[0]
