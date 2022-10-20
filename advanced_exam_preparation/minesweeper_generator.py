@@ -1,6 +1,3 @@
-from re import S
-
-
 def bombs_arownd(r, c):
     global gamepad
     directions = ((-1, 0), (1, 0), (0, -1), (0, 1), (-1, -1), (-1, 1), (1, 1), (1, -1))
@@ -18,7 +15,6 @@ SIZE = int(input())
 NUMBER_OF_BOMBS = int(input())
 gamepad, bombs_coordinates = [], []
 gamepad = [SIZE * [0] for x in range(SIZE)]
-
 
 for _ in range(NUMBER_OF_BOMBS):
     bombs_coordinates.append([int(x) for x in eval(input())])
