@@ -958,3 +958,26 @@ You have to print how many clock-cycles will pass until the task you are interes
 
 ### Output
 - Single line: the clock-cycles that will pass until the task you are interested in is finished
+
+
+# Checkmate
+
+You will be given a chess board (8x8). On the board there will be 3 types of symbols:
+- "." – empty square
+- "Q" – a queen
+- "K" – the king
+
+Your job is to find which queens can capture the king and print them. The moves that the queen can do is to move diagonally, horizontally and vertically (basically all the moves that all the other figures can do except from the knight). Beware that there might be queens that stand in the way of other queens and can stop them from capturing the king.
+
+### Input
+- 8 lines – the state of the board (each square separated by single space)
+
+### Output
+- The positions of the queens that can capture the king as lists
+- If the king cannot be captured, print: "The king is safe!"
+- The order of output does not matter
+
+### Constrains
+- There will always be exactly 8 lines
+- There will always be exactly one King
+- Only the 3 symbols described above will be present in the input
