@@ -1033,3 +1033,23 @@ Otherwise, if you ran out of taxis and there are still some customers left print
 
 ### Constraints
 - You will always have at least one customer and at least one taxi
+
+
+# Minesweeper Generator
+
+Everybody remembers the old mines game. Now it is time to create your own.
+
+You will be given an integer n for the size of the mines field with square shape and another one for the number of bombs that you have to place in the field. On the next n lines, you will receive the position for each bomb.
+Your task is to create the game field placing the bombs at the correct positions and mark them with "*", and calculate the numbers in each cell of the field. Each cell represents a number of all bombs directly near it (up, down, left, right and the 4 diagonals).
+
+
+### Input
+- On the first line, you are given the integer n – the size of the square matrix.
+- On the second line – the number of the bombs.
+- The next n lines holds the position of each bomb.
+
+### Output
+- Print the matrix you've created.
+
+### Constraints
+- The size of the square matrix will be between [2…15].
