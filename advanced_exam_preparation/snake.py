@@ -51,6 +51,5 @@ else:
 
 if out_of_field: print("Game over!")
 
-
 print(f"Food eaten: {food_eaten}")
 [print(''.join(row)) for row in matrix]
