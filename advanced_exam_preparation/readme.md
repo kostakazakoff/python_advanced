@@ -1164,3 +1164,24 @@ When the snake has gone outside of its territory or has eaten enough food, the g
 - The snake position will be marked with 'S'.
 - The snake will always either go outside its territory or eat enough food.
 - There will be no case in which the snake will go through itself.
+
+
+# List Manipulator
+
+Write a function called list_manipulator which receives a list of numbers as first parameter and different amount of other parameters. The second parameter might be "add" or "remove". The third parameter might be "beginning" or "end". There might or might not be any other parameters (numbers):
+- In case of "add" and "beginning", add the given numbers to the beginning of the given list of numbers and return the new list
+- In case of "add" and "end", add the given numbers to the end of the given list of numbers and return the new list
+- In case of "remove" and "beginning"
+    - If there is another parameter (number), remove that amount of numbers from the beginning of the list of numbers.
+    - If there are no other parameters, remove only the first element of the list.
+    - Finaly, return the new list
+- In case of "remove" and "end"
+    - If there is another parameter (number), remove that amount of numbers from the end of the list of numbers.
+    - Otherwise if there are no other parameters, remove only the last element of the list.
+    - Finaly, return the new list
+
+### Input
+- There will be no input
+- Parameters will be passed to your function
+### Output
+- The function should return the new list of numbers
