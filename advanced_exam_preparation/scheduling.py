@@ -1,25 +1,10 @@
-tasks = [int(x) for x in input().split(', ')]
-task_index_needed = int(input())
+tasks = [[x, int(y)] for x, y in enumerate(input().split(', '))]
+tasks = sorted(tasks, key=lambda tasks: tasks[1])
 cycles = 0
-complete = False
+idx = int(input())
 
-while tasks[task_index_needed] > 0:
-    min_cycles = float('inf')
-    for value in tasks:
-        if value < min_cycles and value != 0:
-            min_cycles = value
-
-    for idx, value in enumerate(tasks):
-        if value == 0:
-            if idx == task_index_needed:
-                complete = True
-                break
-            continue
-
-        if value == min_cycles:
-            cycles += value
-            tasks[idx] = 0
-        
-        if complete: break
+for task in tasks:
+    cycles += task[1]
+    if task[0] == idx: break
 
 print(cycles)
