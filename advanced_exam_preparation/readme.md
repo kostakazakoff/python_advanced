@@ -1165,7 +1165,6 @@ When the snake has gone outside of its territory or has eaten enough food, the g
 - The snake will always either go outside its territory or eat enough food.
 - There will be no case in which the snake will go through itself.
 
-
 # List Manipulator
 
 Write a function called list_manipulator which receives a list of numbers as first parameter and different amount of other parameters. The second parameter might be "add" or "remove". The third parameter might be "beginning" or "end". There might or might not be any other parameters (numbers):
