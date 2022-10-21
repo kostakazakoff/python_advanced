@@ -1,9 +1,9 @@
 def move_to(d: str):
     global r, c
     if d == 'up': r -= 1
-    if d == 'down': r += 1
-    if d == 'left': c -= 1
-    if d == 'right': c += 1
+    elif d == 'down': r += 1
+    elif d == 'left': c -= 1
+    elif d == 'right': c += 1
 
 
 def in_burrows():
