@@ -1,8 +1,8 @@
 def step_to(d: str, r, c):
     if d == 'up': r -= 1
-    if d == 'down': r += 1
-    if d == 'left': c -= 1
-    if d == 'right': c += 1
+    elif d == 'down': r += 1
+    elif d == 'left': c -= 1
+    elif d == 'right': c += 1
     return r, c
 
 
