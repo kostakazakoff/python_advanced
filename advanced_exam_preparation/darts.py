@@ -20,7 +20,7 @@ while True:
     player = players[0]
     player['throws'] += 1
     
-    if not 0 <= r < 7 and not 0 <= c < 7:
+    if not all((0 <= r < 7, 0 <= c < 7)):
         players[0], players[1] = players[1], players[0]
         continue
     
