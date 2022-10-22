@@ -1,5 +1,4 @@
 from collections import deque
-from unittest import result
 
 
 def requirements(value):
