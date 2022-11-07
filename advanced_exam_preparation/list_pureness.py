@@ -19,6 +19,7 @@ def best_list_pureness(*args):
     return f'Best pureness {best_pureness} after {rotations} rotations'
 
 
-test = ([4, 3, 2, 6], 4)
-result = best_list_pureness(*test)
-print(result)
+# Test:
+# test = ([4, 3, 2, 6], 4)
+# result = best_list_pureness(*test)
+# print(result)
