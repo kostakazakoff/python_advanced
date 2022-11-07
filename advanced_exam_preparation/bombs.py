@@ -2,9 +2,9 @@ from collections import deque
 
 
 bombs = {
-                    60: {'name': 'Cherry Bombs', 'amount': 0},
-                    40: {'name': 'Datura Bombs', 'amount': 0},
-                    120: {'name': 'Smoke Decoy Bombs', 'amount': 0}}
+        60: {'name': 'Cherry Bombs', 'amount': 0},
+        40: {'name': 'Datura Bombs', 'amount': 0},
+        120: {'name': 'Smoke Decoy Bombs', 'amount': 0}}
 
 bomb_effects = deque([int(x) for x in input().split(', ')])
 bomb_casings = [int(x) for x in input().split(', ')]
