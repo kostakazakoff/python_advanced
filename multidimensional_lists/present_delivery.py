@@ -1,6 +1,3 @@
-from operator import index
-
-
 def in_matrix(r, c):
     global size
     if 0 <= r < size and 0 <= c < size:
