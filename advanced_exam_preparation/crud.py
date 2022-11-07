@@ -43,8 +43,6 @@ pos_r, pos_c = eval(input())
 
 current_operation, *parameters = input().split(', ')
 while current_operation != 'Stop':
-
-
     move_to(parameters[0])
     operation()
     current_operation, *parameters = input().split(', ')
