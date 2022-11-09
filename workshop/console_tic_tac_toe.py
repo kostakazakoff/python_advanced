@@ -52,14 +52,13 @@ def choose_position():
         if not valid_position(row, col) or gamepad[row][col] in ('X', 'O'):
             continue
 
-        pos_row, pos_col = position // 3, position % 3
-        gamepad[pos_row][pos_col] = players[0][1]
+        gamepad[row][col] = players[0][1]
         break
 
-    return pos_row, pos_col
+    return row, col
 
 
-def check_for_line(win=False, equality=False):
+def check_for_line(win=False, draw=False):
     directions = (
         ((1, 0),
         (-1, 0)),
@@ -86,11 +85,11 @@ def check_for_line(win=False, equality=False):
                 win = True
 
     full_pad = all([all([col in 'XO' for col in row]) for row in gamepad])
-    equality = full_pad and not win
-    if equality:
+    draw = full_pad and not win
+    if draw:
         print('Draw!')
 
-    return win, equality
+    return win, draw
 
 
 players = deque()
